@@ -1,0 +1,115 @@
+.textContent {
+	/* margin-bottom: 10px; */
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.userInfo {	
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.userLink {
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	padding-right: 5px;
+}
+
+.publishedTime {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+color:var(--grey99);
+}
+
+.userName{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	color: #CC6633;
+	padding-left: 5px;
+}
+
+.userAvatar {
+	width: 20px;
+	height: 20px;
+	border-radius:50%;
+	/* display: block;
+	 margin: 0 auto; */
+}
+
+.cardTitle {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin-top: 10px;
+width: 100%;
+}
+
+.publishedWord {display: none;}
+
+@media all and (min-width:1024px) {
+	.textContent {
+		order:2;
+		align-items: flex-start;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		flex-basis: 70%;
+		padding:0;
+		height:100%;
+	}
+	.published {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+.publishedWord {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: var(--grey99);
+	display: block;
+}
+	.cardTitle {
+		order:1;
+	}
+
+	.userInfo {
+		display: flex;
+		order:2;
+		padding-top: 10px;
+	}
+	.publishedTime{
+		order:1;
+		 padding-right: 10px;
+		 font-family: 'Roboto';
+		 font-style: normal;
+		 font-weight: 400;
+		 font-size: 14px;
+		 line-height: 16px;
+		 padding-left: 5px;
+		 color: var(--grey99);
+		}
+	.userLink {order:2}
+	.userName {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #CC6633;}
+}

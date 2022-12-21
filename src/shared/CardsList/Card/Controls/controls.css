@@ -1,0 +1,80 @@
+@media all and (min-width:320px) {
+	.controls {
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100%;
+	margin-top: 20px;
+}
+
+.carmaCounter {
+	display: flex;
+}
+
+.carmaNumber {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+padding: 0 4px;
+color: #C4C4C4;
+}
+
+.comments {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.commentsLogo {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content:flex-start;
+}
+
+.commentNumber {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #C4C4C4;
+}
+
+.controlButtons {
+	display: flex;
+	align-content: center;
+	align-items: center;
+width: 55px;
+justify-content: space-between;
+
+}
+}
+@media all and (min-width:1024px) {
+.controls {
+	order:3;
+	display: flex;
+	flex-direction:column;
+	flex-basis: 10%;
+}
+.controlButtons {
+	display: none;
+}
+.commentNumber {
+	display: none;
+}
+.comments {
+display: none;
+}
+.carmaCounter {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+}

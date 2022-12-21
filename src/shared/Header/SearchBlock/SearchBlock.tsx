@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './searchblock.css';
+import {IconAnon, MailIcon} from "../../Icons";
+import {UserBlock} from "./UserBlock";
 
 export function SearchBlock() {
   return (
 <div className={styles.searchBlock}>
-  search
+  <UserBlock/>
 </div>
   );
 }

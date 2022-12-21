@@ -1,0 +1,32 @@
+.container {
+    width:145px ;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    border-radius: 3px;
+}
+
+.menuBtn {
+font-size: 12px;
+text-align: center;
+padding: 10px 0  ;
+}
+
+.menuBtnClose {
+
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--greyD9);
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--greyEC);
+}
+
+.icon {
+    text-align: center;
+    padding-right: 5px;
+}

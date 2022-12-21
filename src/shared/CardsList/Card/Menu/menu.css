@@ -1,0 +1,33 @@
+@media (min-width:320px) {
+	.menu {
+		position: absolute;
+		top:20px;
+		right: 25px;
+	
+	}
+	.menuButton {
+		width: 31px;
+		height: 31px;
+		background-color:#ECECEC;
+		border-radius:50%;
+		text-align: center;
+		transform: rotate(90deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	
+}
+
+@media all and (min-width:1024px) {
+	.menu{
+		position: absolute;
+		
+	}
+
+	.menuButton {
+		background-color:var(--white);
+		transform: rotate(180deg);
+	}
+}

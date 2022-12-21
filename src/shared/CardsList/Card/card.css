@@ -1,0 +1,25 @@
+
+@media all and (min-width:320px) {
+	.card {
+		position: relative;
+		background-color: var(--white);
+		border-radius: 7px;
+		padding: 20px 20px 10px;
+		display: flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+}
+
+
+@media all and (min-width:1024px) {
+	.card {
+		padding: 0 40px;
+		margin: 0;
+	display: flex;
+	flex-direction: row ;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	height:107px;
+}
+}
