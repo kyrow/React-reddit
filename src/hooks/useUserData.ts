@@ -14,9 +14,10 @@ export function useUserData() {
 
     useEffect(()=>{
         axios.get('https://oauth.reddit.com/api/v1/me',{
-            headers:{Authorization:`bearer ${token}`}
+            headers:{Authorization:`Bearer ${token}`}
         })
             .then((resp)=>{
+
                 const userData = resp.data
                 setData({name:userData.name,iconImg:userData.icon_img})
             })

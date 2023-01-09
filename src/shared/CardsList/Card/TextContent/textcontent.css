@@ -46,15 +46,6 @@ color:var(--grey99);
 	 margin: 0 auto; */
 }
 
-.cardTitle {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-margin-top: 10px;
-width: 100%;
-}
 
 .publishedWord {display: none;}
 

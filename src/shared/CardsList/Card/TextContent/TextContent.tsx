@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './textcontent.css';
+import {Title} from './Title'
 
 export function TextContent() {
   return (
@@ -14,7 +15,7 @@ export function TextContent() {
 		<span className={styles.publishedTime}>8 часов назад</span>
 		</div>
 	</div>
-	<a href='#' className={styles.cardTitle}>Реплицированные с зарубежных источников возможности </a>
+<Title/>
 </div>
   );
 }
