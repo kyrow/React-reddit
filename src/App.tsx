@@ -8,13 +8,21 @@ import {CardsList} from "./shared/CardsList";
 import {EColor, Text} from "./shared/Text";
 import {useToken} from "./hooks/useToken";
 import {tokenContext} from "./shared/context/tokenContext";
+import {commentContext} from "./shared/context/commentContext";
 
 function AppComponent() {
+    const [commentValue,setCommentValue]=useState('')
 
     const [token] = useToken();
     const {Provider} = tokenContext
 
+    const CommentProvider = commentContext.Provider
+
     return(
+        <CommentProvider value={{
+            value:commentValue,
+            onChange:setCommentValue
+        }}>
         <Provider value={token}>
         <Layout>
             <Header />
@@ -23,6 +31,7 @@ function AppComponent() {
             </Content>
         </Layout>
         </Provider>
+        </CommentProvider>
     );
 }
 
