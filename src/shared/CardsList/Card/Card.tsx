@@ -13,5 +13,5 @@ export function Card() {
 <Menu />
 <Controls />
 </li>
-  );
+);
 }

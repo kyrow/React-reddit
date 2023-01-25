@@ -28,6 +28,7 @@ function AppComponent() {
             <Header />
             <Content>
                 <CardsList/>
+
             </Content>
         </Layout>
         </Provider>

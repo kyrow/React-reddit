@@ -9,11 +9,13 @@ export function Menu() {
   return (
 		<div className={styles.menu}>
 			<Dropdown
-				button={<button className={styles.menuButton}>
+				button={
+				<button className={styles.menuButton}>
 				<MenuIcon/>
 				</button>}>
 				<DropdownMenu postId={'123'} />
 			</Dropdown>
+
 		</div>
   );
 }

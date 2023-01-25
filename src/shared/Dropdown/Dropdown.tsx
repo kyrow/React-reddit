@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './dropdown.css';
+import ReactDOM from "react-dom";
 
 interface IDropdownProps {
 	button: React.ReactNode; 
@@ -22,7 +23,9 @@ export function Dropdown({button,children,isOpen,onOpen = NOOP,onClose=NOOP}:IDr
 	  }
   }
 
-	return (
+
+
+	return  (
 	<div className={styles.container}>
 		<div onClick={handleOpen}>
 			{button}
@@ -34,6 +37,5 @@ export function Dropdown({button,children,isOpen,onOpen = NOOP,onClose=NOOP}:IDr
 			</div>
 			</div>
 		)}
-	</div>
-  );
+	</div> );
 }
